@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Weekend</title>
+
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: #FAF7F2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header {
+      background: #E7C8A0;
+      padding: 30px 0;
+      text-align: center;
+      color: #3B2F2F;
+      font-size: 36px;
+      letter-spacing: 1px;
+      border-bottom: 3px solid #D6B48C;
+    }
+
+    .content {
+      max-width: 700px;
+      background: #FFFFFF;
+      margin: 80px auto;
+      padding: 80px 40px;
+      border-radius: 14px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      text-align: center;
+      position: relative;
+      background-size: cover;
+    }
+
+    .tape {
+      position: absolute;
+      width: 150px;
+      height: 40px;
+      background: rgba(255, 245, 200, 0.85);
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.12);
+      z-index: 10;
+    }
+
+    .tape-top {
+      top: -20px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-4deg);
+    }
+
+    .tape-side {
+      width: 70px;
+      height: 25px;
+      background: rgba(240, 220, 185, 0.7);
+      border-radius: 4px;
+      position: absolute;
+      z-index: 8;
+    }
+
+    .tape-left {
+      top: 40px;
+      left: -20px;
+      transform: rotate(-12deg);
+    }
+
+    .tape-right {
+      bottom: 40px;
+      right: -20px;
+      transform: rotate(8deg);
+    }
+
+    .star {
+      position: absolute;
+      font-size: 30px;
+      color: #E7C8A0;
+      opacity: 0.7;
+    }
+
+    .star1 { top: 30px; left: 30px; transform: rotate(-10deg); }
+    .star2 { top: 30px; right: 30px; transform: rotate(15deg); }
+    .star3 { bottom: 35px; left: 45px; transform: rotate(5deg); }
+    .star4 { bottom: 40px; right: 50px; transform: rotate(-6deg); }
+
+    h1 {
+      font-size: 65px;
+      color: #6B4F38;
+      margin: 40px 0 10px;
+      letter-spacing: 3px;
+    }
+
+    .back-button {
+      display: block;
+      width: 200px;
+      margin: 40px auto 0;
+      text-align: center;
+      padding: 15px 20px;
+      background: #F7D9BC;
+      border-radius: 8px;
+      color: #4A3B32;
+      font-size: 20px;
+      text-decoration: none;
+      border: 1px solid #C8AD8D;
+      transition: 0.3s;
+    }
+
+    .back-button:hover {
+      background: #EEC9A6;
+      cursor: pointer;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px 0;
+      color: #8A7664;
+      font-size: 14px;
+      margin-top: 30px;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="header">
+    Su Cham’s Daily Log
+  </div>
+
+  <div class="content">
+    
+    <!-- Decorative stars -->
+    <div class="star star1">✦</div>
+    <div class="star star2">✦</div>
+    <div class="star star3">✦</div>
+    <div class="star star4">✦</div>
+
+    <!-- Washi tapes -->
+    <div class="tape tape-top"></div>
+    <div class="tape tape-side tape-left"></div>
+    <div class="tape tape-side tape-right"></div>
+
+    <h1>WEEKEND!</h1>
+
+  </div>
+
+  <a class="back-button" href="index.html">⬅ Back to Calendar</a>
+
+  <div class="footer">
+     Su Cham | CHIJ St. Joseph's Convent
+  </div>
+
+</body>
+</html>
