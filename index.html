@@ -3,30 +3,63 @@
 <head>
   <style>
     body {
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: "Georgia", "Times New Roman", serif;
+      background: #f6f3ee;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-family: "Georgia", serif;
+      letter-spacing: 1px;
+      color: #5a4632;
+      background: #fdf7ef;
+      padding: 15px 20px;
+      width: fit-content;
+      margin: 20px auto 40px;
+      border-radius: 10px;
+      border: 2px dashed #d3c0a6;
     }
 
     .calendar {
       display: grid;
       grid-template-columns: repeat(7, 1fr);
-      gap: 10px;
-      width: 70%;
+      gap: 15px;
+      width: 80%;
       margin: auto;
     }
 
     .day {
-      padding: 15px;
-      background: #FFFFFF;
+      padding: 20px;
+      background: #fffdf7;
       text-align: center;
-      border-radius: 8px;
-      border: 1px solid #cccccc;
+      border-radius: 10px;
+      border: 1px solid #e3d8c9;
       font-size: 18px;
       transition: 0.3s;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.07);
+      font-family: "Georgia", serif;
+      position: relative;
+    }
+
+    .day::before {
+      content: "";
+      width: 40px;
+      height: 12px;
+      background: #f2e3cd;
+      position: absolute;
+      top: -6px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-3deg);
+      border-radius: 3px;
+      opacity: 0.7;
     }
 
     .day:hover {
-      background: #F7D9BC;
+      background: #ffe9d2;
       cursor: pointer;
+      transform: translateY(-3px);
+      box-shadow: 4px 4px 8px rgba(0,0,0,0.1);
     }
 
     a {
@@ -37,7 +70,7 @@
 </head>
 
 <body>
-  <h1 style="text-align:center;">Su Cham's Daily Log: November - December</h1>
+  <h1>Su Cham's Daily Log: November - December</h1>
 
   <div class="calendar">
     <a href="day1.html"><div class="day">24th Nov</div></a>
